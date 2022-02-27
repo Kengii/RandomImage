@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		7F85291527CB93700095FE12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F85291427CB93700095FE12 /* AppDelegate.swift */; };
 		7F85291727CB93700095FE12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F85291627CB93700095FE12 /* SceneDelegate.swift */; };
-		7F85291927CB93700095FE12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F85291827CB93700095FE12 /* ViewController.swift */; };
+		7F85291927CB93700095FE12 /* ImageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F85291827CB93700095FE12 /* ImageVC.swift */; };
 		7F85291C27CB93700095FE12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F85291A27CB93700095FE12 /* Main.storyboard */; };
 		7F85291E27CB93720095FE12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F85291D27CB93720095FE12 /* Assets.xcassets */; };
 		7F85292127CB93720095FE12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F85291F27CB93720095FE12 /* LaunchScreen.storyboard */; };
+		7F85292927CB93D70095FE12 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F85292827CB93D70095FE12 /* CollectionViewController.swift */; };
+		7F85292B27CB940A0095FE12 /* CustomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F85292A27CB940A0095FE12 /* CustomViewCell.swift */; };
+		7F85293127CB96DC0095FE12 /* DataUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F85293027CB96DC0095FE12 /* DataUrl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7F85291127CB93700095FE12 /* RandomImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RandomImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F85291427CB93700095FE12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7F85291627CB93700095FE12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7F85291827CB93700095FE12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7F85291827CB93700095FE12 /* ImageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageVC.swift; sourceTree = "<group>"; };
 		7F85291B27CB93700095FE12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7F85291D27CB93720095FE12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F85292027CB93720095FE12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F85292227CB93720095FE12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7F85292827CB93D70095FE12 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		7F85292A27CB940A0095FE12 /* CustomViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewCell.swift; sourceTree = "<group>"; };
+		7F85293027CB96DC0095FE12 /* DataUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUrl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		7F85291327CB93700095FE12 /* RandomImage */ = {
 			isa = PBXGroup;
 			children = (
-				7F85291427CB93700095FE12 /* AppDelegate.swift */,
-				7F85291627CB93700095FE12 /* SceneDelegate.swift */,
-				7F85291827CB93700095FE12 /* ViewController.swift */,
-				7F85291A27CB93700095FE12 /* Main.storyboard */,
+				7F85292F27CB96C30095FE12 /* Model */,
+				7F85292E27CB945F0095FE12 /* Views */,
+				7F85292C27CB944B0095FE12 /* Controllers */,
+				7F85292D27CB94560095FE12 /* App */,
 				7F85291D27CB93720095FE12 /* Assets.xcassets */,
-				7F85291F27CB93720095FE12 /* LaunchScreen.storyboard */,
 				7F85292227CB93720095FE12 /* Info.plist */,
 			);
 			path = RandomImage;
+			sourceTree = "<group>";
+		};
+		7F85292C27CB944B0095FE12 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7F85291827CB93700095FE12 /* ImageVC.swift */,
+				7F85292827CB93D70095FE12 /* CollectionViewController.swift */,
+				7F85292A27CB940A0095FE12 /* CustomViewCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7F85292D27CB94560095FE12 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7F85291427CB93700095FE12 /* AppDelegate.swift */,
+				7F85291627CB93700095FE12 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7F85292E27CB945F0095FE12 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7F85291A27CB93700095FE12 /* Main.storyboard */,
+				7F85291F27CB93720095FE12 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7F85292F27CB96C30095FE12 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7F85293027CB96DC0095FE12 /* DataUrl.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F85291927CB93700095FE12 /* ViewController.swift in Sources */,
+				7F85292927CB93D70095FE12 /* CollectionViewController.swift in Sources */,
+				7F85291927CB93700095FE12 /* ImageVC.swift in Sources */,
 				7F85291527CB93700095FE12 /* AppDelegate.swift in Sources */,
 				7F85291727CB93700095FE12 /* SceneDelegate.swift in Sources */,
+				7F85292B27CB940A0095FE12 /* CustomViewCell.swift in Sources */,
+				7F85293127CB96DC0095FE12 /* DataUrl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
