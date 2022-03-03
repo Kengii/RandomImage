@@ -9,16 +9,16 @@ import UIKit
 import MapKit
 
 class MapVC: UIViewController {
- 
+
     var user: User?
-    
+
     @IBOutlet weak var mapView: MKMapView!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupPlaceMark()
     }
-    
+
     private func setupPlaceMark() {
         guard let location = user?.address?.street else { return }
 
@@ -32,11 +32,11 @@ class MapVC: UIViewController {
             guard let placemarks = placemarks else { return }
 
             let placemark = placemarks.first
-            
+
             let annotation = MKPointAnnotation()
             annotation.title = self.user?.address?.city
             annotation.subtitle = self.user?.address?.street
-            
+
             guard let placemarkLocation = placemark?.location else { return }
 
             annotation.coordinate = placemarkLocation.coordinate

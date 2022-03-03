@@ -10,7 +10,7 @@ import UIKit
 class DetailVC: UIViewController {
 
     var user: User?
-    
+
     @IBOutlet weak var nameLbl: UILabel!
     @IBOutlet weak var userNameLbl: UILabel!
     @IBOutlet weak var emailLbl: UILabel!
@@ -23,17 +23,17 @@ class DetailVC: UIViewController {
     @IBOutlet weak var nameCompanyLbl: UILabel!
     @IBOutlet weak var catchPharse: UILabel!
     @IBOutlet weak var bsLbl: UILabel!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUIData()
     }
-    
-    
+
+
     @IBAction func goPosts(_ sender: UIButton) {
-        
+
     }
-    
+
     private func setupUIData() {
         nameLbl.text = user?.name
         userNameLbl.text = user?.username
@@ -48,17 +48,17 @@ class DetailVC: UIViewController {
         catchPharse.text = user?.company?.catchPhrase
         bsLbl.text = user?.company?.bs
     }
-    
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let postTVC = segue.destination as? PostsTVC {
             postTVC.user = user
         } else if segue.identifier == "goMap",
-                  let mapVC = segue.destination as? MapVC {
+            let mapVC = segue.destination as? MapVC {
             mapVC.user = user
         }
-        
+
     }
-    
+
 }
 
 
