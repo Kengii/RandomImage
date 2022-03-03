@@ -16,6 +16,16 @@
 		7F85292927CB93D70095FE12 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F85292827CB93D70095FE12 /* CollectionViewController.swift */; };
 		7F85292B27CB940A0095FE12 /* CustomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F85292A27CB940A0095FE12 /* CustomViewCell.swift */; };
 		7F85293127CB96DC0095FE12 /* DataUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F85293027CB96DC0095FE12 /* DataUrl.swift */; };
+		7F94566927CFBE840068CDD6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F94566827CFBE840068CDD6 /* User.swift */; };
+		7F94566B27CFC7E30068CDD6 /* UserTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F94566A27CFC7E30068CDD6 /* UserTVC.swift */; };
+		7F94566E27CFC82F0068CDD6 /* CustomUsersTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F94566D27CFC82F0068CDD6 /* CustomUsersTVC.swift */; };
+		7F94567027CFC9950068CDD6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F94566F27CFC9950068CDD6 /* API.swift */; };
+		7F94567227CFCD680068CDD6 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F94567127CFCD680068CDD6 /* DetailVC.swift */; };
+		7F94567627D113E50068CDD6 /* PostsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F94567527D113E50068CDD6 /* PostsTVC.swift */; };
+		7F94567A27D11C5D0068CDD6 /* CommentsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F94567927D11C5D0068CDD6 /* CommentsTVC.swift */; };
+		7F94567C27D125560068CDD6 /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F94567B27D125560068CDD6 /* AddPostVC.swift */; };
+		7F94567E27D12E290068CDD6 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F94567D27D12E290068CDD6 /* Map.storyboard */; };
+		7F94568027D12E6B0068CDD6 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F94567F27D12E6A0068CDD6 /* MapVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +40,16 @@
 		7F85292827CB93D70095FE12 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		7F85292A27CB940A0095FE12 /* CustomViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewCell.swift; sourceTree = "<group>"; };
 		7F85293027CB96DC0095FE12 /* DataUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataUrl.swift; sourceTree = "<group>"; };
+		7F94566827CFBE840068CDD6 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7F94566A27CFC7E30068CDD6 /* UserTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTVC.swift; sourceTree = "<group>"; };
+		7F94566D27CFC82F0068CDD6 /* CustomUsersTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUsersTVC.swift; sourceTree = "<group>"; };
+		7F94566F27CFC9950068CDD6 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		7F94567127CFCD680068CDD6 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		7F94567527D113E50068CDD6 /* PostsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsTVC.swift; sourceTree = "<group>"; };
+		7F94567927D11C5D0068CDD6 /* CommentsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsTVC.swift; sourceTree = "<group>"; };
+		7F94567B27D125560068CDD6 /* AddPostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
+		7F94567D27D12E290068CDD6 /* Map.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		7F94567F27D12E6A0068CDD6 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,9 +85,11 @@
 				7F85292F27CB96C30095FE12 /* Model */,
 				7F85292E27CB945F0095FE12 /* Views */,
 				7F85292C27CB944B0095FE12 /* Controllers */,
+				7F94566C27CFC7FE0068CDD6 /* Cell */,
 				7F85292D27CB94560095FE12 /* App */,
 				7F85291D27CB93720095FE12 /* Assets.xcassets */,
 				7F85292227CB93720095FE12 /* Info.plist */,
+				7F94566F27CFC9950068CDD6 /* API.swift */,
 			);
 			path = RandomImage;
 			sourceTree = "<group>";
@@ -77,7 +99,12 @@
 			children = (
 				7F85291827CB93700095FE12 /* ImageVC.swift */,
 				7F85292827CB93D70095FE12 /* CollectionViewController.swift */,
-				7F85292A27CB940A0095FE12 /* CustomViewCell.swift */,
+				7F94566A27CFC7E30068CDD6 /* UserTVC.swift */,
+				7F94567127CFCD680068CDD6 /* DetailVC.swift */,
+				7F94567527D113E50068CDD6 /* PostsTVC.swift */,
+				7F94567927D11C5D0068CDD6 /* CommentsTVC.swift */,
+				7F94567B27D125560068CDD6 /* AddPostVC.swift */,
+				7F94567F27D12E6A0068CDD6 /* MapVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -95,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				7F85291A27CB93700095FE12 /* Main.storyboard */,
+				7F94567D27D12E290068CDD6 /* Map.storyboard */,
 				7F85291F27CB93720095FE12 /* LaunchScreen.storyboard */,
 			);
 			path = Views;
@@ -104,8 +132,18 @@
 			isa = PBXGroup;
 			children = (
 				7F85293027CB96DC0095FE12 /* DataUrl.swift */,
+				7F94566827CFBE840068CDD6 /* User.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		7F94566C27CFC7FE0068CDD6 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7F85292A27CB940A0095FE12 /* CustomViewCell.swift */,
+				7F94566D27CFC82F0068CDD6 /* CustomUsersTVC.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +207,7 @@
 				7F85292127CB93720095FE12 /* LaunchScreen.storyboard in Resources */,
 				7F85291E27CB93720095FE12 /* Assets.xcassets in Resources */,
 				7F85291C27CB93700095FE12 /* Main.storyboard in Resources */,
+				7F94567E27D12E290068CDD6 /* Map.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,11 +219,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F85292927CB93D70095FE12 /* CollectionViewController.swift in Sources */,
+				7F94567A27D11C5D0068CDD6 /* CommentsTVC.swift in Sources */,
 				7F85291927CB93700095FE12 /* ImageVC.swift in Sources */,
+				7F94567227CFCD680068CDD6 /* DetailVC.swift in Sources */,
+				7F94567C27D125560068CDD6 /* AddPostVC.swift in Sources */,
+				7F94567627D113E50068CDD6 /* PostsTVC.swift in Sources */,
 				7F85291527CB93700095FE12 /* AppDelegate.swift in Sources */,
 				7F85291727CB93700095FE12 /* SceneDelegate.swift in Sources */,
+				7F94567027CFC9950068CDD6 /* API.swift in Sources */,
+				7F94566E27CFC82F0068CDD6 /* CustomUsersTVC.swift in Sources */,
+				7F94568027D12E6B0068CDD6 /* MapVC.swift in Sources */,
+				7F94566B27CFC7E30068CDD6 /* UserTVC.swift in Sources */,
 				7F85292B27CB940A0095FE12 /* CustomViewCell.swift in Sources */,
 				7F85293127CB96DC0095FE12 /* DataUrl.swift in Sources */,
+				7F94566927CFBE840068CDD6 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

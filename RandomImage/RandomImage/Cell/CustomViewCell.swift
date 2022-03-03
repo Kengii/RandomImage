@@ -9,7 +9,7 @@ import UIKit
 
 class CustomViewCell: UICollectionViewCell {
 
-    
+
     @IBOutlet weak var customLable: UILabel!
-    
+
 }
