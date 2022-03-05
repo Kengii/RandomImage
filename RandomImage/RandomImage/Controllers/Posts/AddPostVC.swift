@@ -36,10 +36,11 @@ class AddPostVC: UIViewController {
                 "body": body]
             guard let httpBody = try? JSONSerialization.data(withJSONObject: post, options: []) else { return }
             request.httpBody = httpBody
-            URLSession.shared.dataTask(with: request) { data, _, _ in
+            URLSession.shared.dataTask(with: request) { [weak self] data, _, _ in
                 if let data = data {
+                    print("\(data)")
                     DispatchQueue.main.async {
-                        self.navigationController?.popViewController(animated: true)
+                        self?.navigationController?.popViewController(animated: true)
                     }
                 }
             }.resume()

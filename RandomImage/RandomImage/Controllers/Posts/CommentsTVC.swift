@@ -33,15 +33,15 @@ class CommentsTVC: UITableViewController {
     func getComments(pathUrl: String) {
         guard let url = URL(string: pathUrl) else { return }
 
-        let task = URLSession.shared.dataTask(with: url) { (data, _, _) in
+        let task = URLSession.shared.dataTask(with: url) { [weak self] (data, _, _) in
             guard let data = data else { return }
             do {
-                self.comments = try JSONDecoder().decode([Comments].self, from: data)
+                self?.comments = try JSONDecoder().decode([Comments].self, from: data)
             } catch let error {
                 print(error)
             }
             DispatchQueue.main.async {
-                self.tableView.reloadData()
+                self?.tableView.reloadData()
             }
         }
         task.resume()

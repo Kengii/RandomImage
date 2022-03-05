@@ -11,7 +11,7 @@ class CustomUsersTVC: UITableViewCell {
 
     @IBOutlet weak var nameLable: UILabel!
     @IBOutlet weak var userNameLable: UILabel!
-    
+
     func filling(user: User) {
         nameLable.text = user.name
         userNameLable.text = user.username

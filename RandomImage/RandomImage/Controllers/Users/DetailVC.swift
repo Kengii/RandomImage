@@ -55,10 +55,11 @@ class DetailVC: UIViewController {
         } else if segue.identifier == "goMap",
             let mapVC = segue.destination as? MapVC {
             mapVC.user = user
+        } else if segue.identifier == "goAlboms",
+            let albomsVC = segue.destination as? AlbumsTVC {
+            albomsVC.user = user
         }
-
     }
-
 }
 
 

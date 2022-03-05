@@ -68,15 +68,15 @@ class PostsTVC: UITableViewController {
         let pathURL = "\(API.postPath)?userId=\(userId)"
         guard let url = URL(string: pathURL) else { return }
 
-        let task = URLSession.shared.dataTask(with: url) { (data, _, _) in
+        let task = URLSession.shared.dataTask(with: url) { [weak self] (data, _, _) in
             guard let data = data else { return }
             do {
-                self.posts = try JSONDecoder().decode([Posts].self, from: data)
+                self?.posts = try JSONDecoder().decode([Posts].self, from: data)
             } catch let error {
                 print(error)
             }
             DispatchQueue.main.async {
-                self.tableView.reloadData()
+                self?.tableView.reloadData()
             }
         }
         task.resume()

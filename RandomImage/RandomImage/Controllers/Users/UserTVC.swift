@@ -49,15 +49,15 @@ class UserTVC: UITableViewController {
     func fetchData() {
         guard let url = API.jsonUsersURL else { return }
 
-        let task = URLSession.shared.dataTask(with: url) { (data, _, _) in
+        let task = URLSession.shared.dataTask(with: url) { [weak self] (data, _, _) in
             guard let data = data else { return }
             do {
-                self.users = try JSONDecoder().decode([User].self, from: data)
+                self?.users = try JSONDecoder().decode([User].self, from: data)
             } catch let error {
                 print(error)
             }
             DispatchQueue.main.async {
-                self.tableView.reloadData()
+                self?.tableView.reloadData()
             }
         }
         task.resume()
